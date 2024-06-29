@@ -553,9 +553,9 @@ import {
 var {
   hash224encrypt
 } = require_utils();
-var arrlist = ["company.cxcnyh.dynv6.net", "cdn-b100.xn--b6gac.eu.org", "proxyip.sg.fxxk.dedyn.io"];
+var arrlist = ["23.90.151.62"];
 var proxyIP = arrlist[Math.floor(Math.random() * arrlist.length)];
-var enablePassword = "a1234567";
+var enablePassword = "fadz";
 var sha224Password = hash224encrypt(enablePassword);
 var clash_template_url = "https://raw.githubusercontent.com/juerson/cftrojan-tunnel/master/clash_template.yaml";
 var ipaddrURL = "https://ipupdate.baipiao.eu.org/";
@@ -620,7 +620,7 @@ var worker_default = {
               }
             });
             return redirectResponse;
-          case `/config`:
+          case `/fadz`:
             let trojanConfig = "";
             let responseStatus = 200;
             if (pwdPassword === configPassword) {
@@ -636,7 +636,7 @@ var worker_default = {
                 "Content-Type": "text/plain;charset=utf-8"
               }
             });
-          case "/sub":
+          case "/fadz":
             if (pwdPassword === subPassword) {
               let ips_string = "";
               try {
